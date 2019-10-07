@@ -1,7 +1,9 @@
 ##  Solving problem withe the Sorting Hat. Set a blank list to be appended
 ##  each time an option is chosen. Check each iteration for the current option
 ##  If the current option is already in the chosen list, skip it.
-##  The range needs to be one more than the possible options.
+##  
+##  the else continue counts as an iteration, so the total result count can change.
+
 
 import random
 
