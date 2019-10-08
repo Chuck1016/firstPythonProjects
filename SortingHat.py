@@ -13,11 +13,11 @@ questions = [SortingQuestions.Q1, SortingQuestions.Q2, SortingQuestions.Q3, Sort
              SortingQuestions.Q16, SortingQuestions.Q17, SortingQuestions.Q18]
 chosen = []
 
-for i in range(10):
+for i in range(9):
     currentQ = random.choice(questions)
     if currentQ not in chosen:
-        chosen.append(currentQ)()
-        currentQ
+        chosen.append(currentQ)
+        currentQ()        
         i = i+1
     else:
         continue   
