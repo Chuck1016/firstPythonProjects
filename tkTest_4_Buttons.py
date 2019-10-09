@@ -7,7 +7,6 @@ today = datetime.date.today()
 fullDate = today.strftime("%B %d, %Y")
 weekDayName = today.strftime("%A")
 
-fired = today - datetime.date(2019,8,15)
 git = today - datetime.date(2019,4,29)
 birthday = datetime.date(2020,10,16) - today
 
