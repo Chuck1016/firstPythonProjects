@@ -1,6 +1,4 @@
 ##  Quiz build from Pottermore.com
-##  All bugs have been worked out except else: the continue messes up the question count
-
 import random, SortingQuestions
 
 print("Welcome to the Hogwarts Sorting ceremony! Today you will be sorted into your house!")
