@@ -1,6 +1,5 @@
-##  Quiz build from Pottermore.com . I got it to work in Windows, but when I rewrote it on 
-##  a Linux computer the house point calculation wouldn't work within the dictionary. Also, 
-##  calling the dictionary in the 2nd to last line doesn't work anymore, not a string
+##  Quiz build from Pottermore.com
+##  All bugs have been worked out except else: the continue messes up the question count
 
 import random, SortingQuestions
 
@@ -13,16 +12,15 @@ questions = [SortingQuestions.Q1, SortingQuestions.Q2, SortingQuestions.Q3, Sort
              SortingQuestions.Q16, SortingQuestions.Q17, SortingQuestions.Q18]
 chosen = []
 
-for i in range(9):
+while len(chosen) < 10:
     currentQ = random.choice(questions)
     if currentQ not in chosen:
         chosen.append(currentQ)
         currentQ()        
-        i = i+1
     else:
         continue   
 
 print("Congratulations! you've completed the sorting ceremony!")
 placed = max(SortingQuestions.house, key=lambda key: SortingQuestions.house[key])
+print("You have been sorted into...", placed.upper(),"!")
 print("Your house scores are: \n ", SortingQuestions.house)
-print("You have been sorted into ", placed)
