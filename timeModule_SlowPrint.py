@@ -13,4 +13,4 @@ slowPrint("Three travelers, exhausted from their long journey, see a light in th
 time.sleep(1)
 slowPrint("A castle is ahead. It could mean refuge.\n")
 time.sleep(1)
-slowPrint("Or it could mean doom...")
+slowPrint("Or it could mean doom...\n")
